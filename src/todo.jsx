@@ -6,13 +6,27 @@ import {observer} from 'mobx-react';
 let todos = observable([]);
 
 let TodoInput = observer((props) => {
+  function on_change(e) {
+    props.todo.text = e.target.value;
+  }
+
   return <input type="text" placeholder="Empty todo"
-                defaultValue={props.todo.text} />
+                defaultValue={props.todo.text}
+                onChange={on_change} />
 });
+
+let TodoDelete = (props) => {
+  function on_click() {
+    todos.splice(props.i, 1);
+  }
+
+  return <button className="todo-delete" onClick={on_click}>Delete</button>
+};
 
 let Todo = observer((props) => {
   return <div className="todo">
     <TodoInput todo={props.todo} />
+    <TodoDelete i={props.i} />
   </div>
 });
 
