@@ -9,6 +9,8 @@
     "bootstrap": "^4.5.0",
     "handlebars": "^4.7.6",
     "jquery": "^3.5.1",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.2.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
