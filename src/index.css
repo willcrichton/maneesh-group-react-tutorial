@@ -21,9 +21,15 @@ code, pre {
 .todo {
     border-bottom: 1px solid #ccc;
     padding: 5px;
+    position: relative;
 }
 
 .todo input {
     width: 100%;
     border: none;
+}
+
+.todo-delete {
+    position: absolute;
+    right: 5px;
 }
