@@ -5,9 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
 }
 
-code {
+code, pre {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.todo-list {
+    box-shadow: 1px 1px 4px black;
+    margin: 10px;
+}
+
+.todo {
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+
+.todo input {
+    width: 100%;
+    border: none;
 }
