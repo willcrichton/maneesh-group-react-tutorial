@@ -21,8 +21,13 @@ function todo_render() {
       todo_render();
     });
 
+    todo_dom.find('input').change(function() {
+      todo.text = $(this).val();
+    });
+
     return todo_dom;
   });
+
   $('.todo-list').html(all_todo_dom);
 
   $('.todo-count').html($('.todo').length);
